@@ -1,0 +1,54 @@
+*{
+    padding: 10px;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 0.2em;
+}
+#title{
+    font-size: 45px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: rgb(73, 73, 73);
+}
+#aside{
+    padding-top: 0px;
+}
+.flag{
+    max-height: 4em;
+}
+.one-flag{
+    max-width: 15em;
+    max-height: 15em;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: 150px;
+}
+
+.popup{
+    padding: 10px;
+    background-color: #ddd;
+    transition: transform .2s;
+    cursor: pointer;
+}
+.popup:hover{
+    transform: scale(1.05);
+    background-color: #ccc;
+}
+.one-country{
+    padding: 10px;
+    background-color: #ddd;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: (50%, 50%);
+}
+.one-country img{
+    margin: 10px;
+}
+.one-country p {
+    padding: 10px;
+}
